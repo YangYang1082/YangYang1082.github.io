@@ -37,5 +37,5 @@ create database YourDatabaseName;
 ```
 ### 5.授予权限
 ``` bash
-grant all priviliges on database YourDatabaseName to YourUserName;
+grant all on database YourDatabaseName to YourUserName;
 ```

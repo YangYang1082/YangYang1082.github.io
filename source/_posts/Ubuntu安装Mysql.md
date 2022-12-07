@@ -24,6 +24,8 @@ sudo apt install mysql-server
 ```
 ### 2.配置Mysql
 ``` bash
+sudo mysql
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'mynewpassword';
 sudo mysql_secure_installation
 ```
 ### 3.创建用户
@@ -32,9 +34,24 @@ create user 'YourUserName' identified by 'YourPassword';
 ```
 ### 4.创建数据库
 ``` bash
-create database YourDatabaseName character set utf8mb4 colllate utf8mb4_bin;
+mysql -u root -p {password}
+create database YourDatabaseName;
 ```
 ### 5.授予权限
 ``` bash
 grant all privileges on YourDatabaseName.* to YourUserName;
+```
+
+### Remote login
+
+``` bash
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+```
+
+Change ``` bind-address = 127.0.0.1 ``` to ``` bind-address = 0.0.0.0 ```
+
+restart mysql 
+
+``` bash
+sudo systemctl restart mysql
 ```

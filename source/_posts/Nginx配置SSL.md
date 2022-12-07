@@ -36,3 +36,16 @@ sudo certbot certonly --nginx
 ``` bash
 sudo certbot renew --dry-run
 ```
+
+### 5.安装NGINX
+
+``` bash
+sudo apt install nginx
+```
+
+### 5.添加配置文件
+
+``` bash
+cd /etc/nginx/conf.d
+vi 
+```
