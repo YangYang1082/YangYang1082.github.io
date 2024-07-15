@@ -20,8 +20,7 @@ date: 2018-11-11 08:24:49
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4">John Smith</p>
-        <p class="subtitle is-6">@johnsmith</p>
+        <p class="title is-4">YangYang</p>
       </div>
     </div>
   </div>
